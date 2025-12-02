@@ -43,6 +43,14 @@ venv\Scripts\activate  # On Windows
 pip install flask pillow
 ```
 
+## Docker setup
+
+# Build the image
+docker build -t instagram-splitter .
+
+# Run container
+docker run -d --name instagram-splitter -p 3100:3100 instagram-splitter
+
 ## 💻 Usage
 
 1. Start the Flask server:

@@ -1,0 +1,15 @@
+
+version: '3.8'
+
+services:
+  instagram-splitter:
+    build: .
+    container_name: instagram-carousel-splitter
+    ports:
+      - "3100:80"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+    restart: unless-stopped
