@@ -45,11 +45,15 @@ pip install flask pillow
 
 ## Docker setup
 
-# Build the image
+Build the image:
+```bash
 docker build -t instagram-splitter .
+```
 
-# Run container
+Run container:
+```bash
 docker run -d --name instagram-splitter -p 3100:3100 instagram-splitter
+```
 
 ## 💻 Usage
 
