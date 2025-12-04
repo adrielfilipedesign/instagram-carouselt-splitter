@@ -77,4 +77,4 @@ def split():
         return jsonify({'error': f'Error when process the image: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True, port=3100)
+    app.run(host="0.0.0.0", port=3100)

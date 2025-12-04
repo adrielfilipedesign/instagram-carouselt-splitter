@@ -6,7 +6,7 @@ services:
     build: .
     container_name: instagram-carousel-splitter
     ports:
-      - "3100:80"
+      - "3100:3100"
     volumes:
       - .:/app
     environment:
